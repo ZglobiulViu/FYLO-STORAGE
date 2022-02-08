@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 0.625em;
+}
+body {
+  font-family: "Raleway";
+  background-color: hsl(229, 57%, 11%);
+  font-size: 1.4rem;
+  color: hsl(229, 7%, 55%);
+  overflow-y: hidden;
+}
+.flex-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.pattern-desktop {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  bottom: 0;
+  height: 50%;
+}
+.pattern-mobile {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+
+  bottom: 0;
+}
+.fylo-starter-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  width: 90rem;
+
+  gap: 3.6rem;
+}
+.fylo-starter {
+  padding: 3.2em 0em 3.2em 3.2em;
+  border-radius: 11px 40% 11px 11px;
+}
+#fylo-main-logo {
+  width: 8em;
+  margin-bottom: 2em;
+}
+.fylo-starter__logos {
+  display: flex;
+  gap: 1em;
+}
+.fylo-secondary-logo {
+  padding: 1em;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 11px;
+}
+.fylo-starter,
+.fylo-text-box {
+  background-color: hsl(228, 56%, 26%);
+}
+.fylo-text-box {
+  align-self: flex-end;
+  border-radius: 11px;
+  padding: 3em;
+  position: relative;
+}
+.fylo-left-gb {
+  display: inline-block;
+  top: -30%;
+  right: 0;
+  z-index: 0;
+}
+.fylo-left-gb,
+.fylo-left-gb-mobile {
+  color: black;
+  font-size: 3.2rem;
+  font-weight: 700;
+  background-color: #fff;
+  position: absolute;
+  padding: 0.5em;
+  border-radius: 11px 11px 0 11px;
+  margin-right: 1.4em;
+}
+.fylo-left-gb-mobile {
+  display: none;
+}
+.fylo-left-gb::after {
+  content: "";
+
+  position: absolute;
+  transform: translate(-74.7%, 10%);
+  border: 1em solid;
+  z-index: -2;
+  border-color: transparent #fff transparent transparent;
+}
+.left-gb-span {
+  color: hsl(229, 7%, 55%);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.fylo-used-gb {
+  color: hsl(229, 7%, 55%);
+  font-weight: 700;
+}
+.used-gb-number {
+  color: hsl(243, 100%, 93%);
+  font-weight: 700;
+}
+.starter-gb,
+.ending-gb {
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+}
+.gb-limit {
+  display: flex;
+  justify-content: space-between;
+}
+.bar-container {
+  display: flex;
+
+  margin: 1.2em 0 0.8em 0;
+  box-shadow: 0 0 0 0.2em hsla(229, 57%, 11%, 0.5);
+  border-radius: 1em;
+  justify-self: center;
+}
+.circle {
+  padding: 0.5em;
+  background-color: #fff;
+  display: inline-block;
+
+  border-radius: 50%;
+}
+.bar {
+  width: 70%;
+  padding: 0.5%;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 1em;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.bar-next {
+  width: 30%;
+  padding: 0.5%;
+  background-color: hsla(229, 57%, 11%, 0.5);
+
+  border-radius: 0 1em 1em 0;
+}

@@ -1,0 +1,56 @@
+/* MEDIA 78em=1250PX */
+@media (max-width: 78em) {
+  main {
+    padding: 0 2.4em;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  .fylo-starter-container {
+    grid-template-columns: 1fr;
+    width: 40%;
+  }
+  .fylo-left-gb::after {
+    display: none;
+  }
+  .fylo-left-gb {
+    display: none;
+  }
+  .fylo-left-gb-mobile {
+    display: inline-block;
+    left: 25%;
+    bottom: -25%;
+    border-radius: 11px;
+  }
+  .pattern-mobile {
+    display: inline-block;
+  }
+  .pattern-desktop {
+    display: none;
+  }
+}
+
+/* MEDIA 62em=995PX */
+@media (max-width: 62em) {
+  .fylo-starter-container {
+    width: 50%;
+  }
+}
+/* MEDIA 42em=669PX */
+@media (max-width: 42em) {
+  .fylo-starter-container {
+    width: 65%;
+  }
+  .fylo-used-gb {
+    font-size: 1.2rem;
+  }
+}
+/* MEDIA 31.3em=500PX */
+@media (max-width: 31.3em) {
+  .fylo-starter-container {
+    width: 100%;
+  }
+}
